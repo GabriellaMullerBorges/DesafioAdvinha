@@ -8,29 +8,68 @@
         <title> Desafio Advinha [Desenvolve 2023]</title>
         <link href="css/reset.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-          <h1 class="page-title">
-            MENTALISTA
-          </h1>
-         <br/>
-          <p class="page-subtitle">
-            Digite um número de 0 a 10
-          </p>
-          <br/>
-          <input type="number" id="valor" /><br>
-          <button type="submit" onclick="Chutar()">Chutar</button>
-          <h2 class="resultado" id="resultado"></h2>
-           </div>
-         <div>
-          <h3 class="errou" id="errou"></h3>
-        <h3 class="acertou" id="acertou"></h3>
-        </div>
-        <a href="https://alura.com.br/" target="_blank">
-          <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-        </a>
+        <header>
+            <div class="alura-logo-div">
+                    <a href="https://alura.com.br/" target="_blank">
+                    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+                </a>
+            </div>
+            <div class="container-elementos-header">
+                 <h1>
+                DESAFIO ADVINHAÇÃO
+                 </h1> 
+            </div>
+        </header> 
+
+        <main>
+            <div class="container">  
+            <ul class="jogos-advinhacao">
+                <div class="jogo-nivel-1">
+                   <!-- <ul class="dentro-jogo-nivel-1">
+                        <p>
+                            Acerte um número da lista
+                        </p>
+                        <p>
+                            Você tem DUAS tentativas
+                        </p>
+                        <p>
+                            Digite um número de 0 a 10
+                        </p>
+                        <input class="input" type="number" id="valor" /><br>
+                        <button class="botao" type="submit" onclick="chutar()">Chutar</button>
+                    </ul>
+                </div>-->
+                <div class="jogo-nivel-2">
+                    <ul class="dentro-jogo-nivel-2">
+                        <p>
+                            Acerte o número secreto
+                        </p>
+                       <!--  <p>
+                            Você tem TRÊS tentativas
+                        </p> -->
+                        <p>
+                            Digite um número de 0 a 10
+                        </p>
+                        <input class="input" type="number" id="valor" /><br>
+                        <button class="botao" type="submit" onclick="chutar()">Chutar</button>
+                    </ul>
+                </div>
+            </ul>
+            <h2 class="resultado" id="resultado"></h2>
+            </div>
+        </main>
+        <footer class="rodape-container">
+            <p>@GabriellaMullerBorges</p>
+            <p>2023</p>
+            <a
+                href="https://desenvolve.grupoboticario.com.br/" class="rodape__midia"><img src="css/imagens/logo-desenvolve-detalhada.png" alt="Ícone do Desenvolve">
+            </a>
+        </footer>
         <script src="./main.js"></script>
-      </body>     
+    </body>     
 </html>
