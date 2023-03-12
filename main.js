@@ -2,24 +2,31 @@ const maximoDeTentativas = 3
 
 var numeroSecreto = parseInt(Math.random()*11)
 
-var chute = parseInt(document.getElementById('valor').value);
+var tentativas = 1;
 
-var elementoResultado = document.getElementById("resultado");
-
-
-function alerta(frase){
+function mostra(frase){
   alert(frase)
 }
   
 function chutar () {
-  if(chute == numeroSecreto) {
-  alerta("Você acertou")
-  }
-
-  if(chute != numeroSecreto){
-  alerta ("Você errou, o número era " + numeroSecreto)
+   while (tentativas <= maximoDeTentativas){
+    var chute = parseInt(document.getElementById('valor').value);
+      if(chute != numeroSecreto) {
+          mostra("Você ERROU, essa foi sua tentativa nº " +tentativas)
+          if(tentativas==3){
+            mostra("Número máximo de tentativas atingido")
+          }
+          tentativas++
+          input.value=''            
+      } else {
+          mostra("Você ACERTOU")
+          break;
+      }
+      
   }
 }
+
+
 
 
 
